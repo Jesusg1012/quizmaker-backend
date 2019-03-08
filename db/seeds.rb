@@ -6,10 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Subject.create(name: "Math")
-Subject.create(name: "Sports")
+Subject.create(name: 'Math')
+Subject.create(name: 'Sports')
 
-test1 = Test.create(title: "Math 101", subject_id: 1)
+test1 = Test.create(title: "Math 101", description: "How to add and subtract", subject_id: 1)
 Question.create(title: "1+1 = ?", answer: "2", test_id: 1)
 Question.create(title: "2+2 = ?", answer: "4", test_id: 1)
 Question.create(title: "3-1 = ?", answer: "2", test_id: 1)
@@ -18,7 +18,7 @@ Question.create(title: "3+1 = ?", answer: "4", test_id: 1)
 Question.create(title: "2-1 = ?", answer: "1", test_id: 1)
 Question.create(title: "5-2 = ?", answer: "3", test_id: 1)
 
-test2 = Test.create(title: "Math 102", description: "How to multiply and divide.", subject_id: 1)
+test2 = Test.create(title: "Math 102", description: "How to multiply and divide", subject_id: 1)
 Question.create(title: "1x1 = ?", answer: "1", test_id: 2)
 Question.create(title: "1x2 = ?", answer: "2", test_id: 2)
 Question.create(title: "2x2 = ?", answer: "4", test_id: 2)
@@ -41,7 +41,10 @@ Question.create(title: "√4 = ?", answer: "2", test_id: 3)
 Question.create(title: "√9 = ?", answer: "3", test_id: 3)
 Question.create(title: "√144 = ?", answer: "12", test_id: 3)
 Question.create(title: "√49 = ?", answer: "7", test_id: 3)
+
+
 test4 = Test.create(title: 'NBA Teams', description: 'Given the city, name the team', subject_id: 2)
+Question.create(title: 'Los Angeles', answer: 'Lakers', test_id: 4)
 Question.create(title: 'Golden State(Oakland)', answer: 'Warriors', test_id: 4)
 Question.create(title: 'Boston', answer: 'Celtics', test_id: 4)
 Question.create(title: 'Toronto', answer: 'Raptors', test_id: 4)
